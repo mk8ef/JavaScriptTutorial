@@ -29,12 +29,12 @@
      <p id = "sayHello"> </p>
 
      <script> 
-         var yourName = prompt("What is your name");
-         if(yourName != null) {
-             document.getElementById('sayHello').innerHTML = "Hello " + yourName;
-         } else {
-             alert('Please Enter A Name!')
-         }
+      //   var yourName = prompt("What is your name");
+       //  if(yourName != null) {
+       //      document.getElementById('sayHello').innerHTML = "Hello " + yourName;
+       //  } else {
+       //      alert('Please Enter A Name!')
+       //  }
 
          document.write(3+4,"<br />")
 
@@ -53,6 +53,34 @@
 
 
         document.write("Conver Number: " , Number('3.4'), "<br />")
+
+        var randStr = "One String" + " Two String"
+         document.write(randStr, "<br />")
+
+
+        var randStr = "TEst test test " + " Two String"
+         document.write(randStr.slice(0,4), "<br />")
+
+
+         var age =127
+         if ((age > 5) && (age < 9)){
+             document.write(age, "<br />")
+         } else {
+            document.write('age example',"<br />")
+         }
+         
+
+         switch(age){
+             case 127:
+                document.write('age switch statement',"<br />")
+                break;
+         } 
+
+
+
+
+
+
 
      </script>
 
