@@ -264,9 +264,25 @@
 
         for(var prop in cust1){
             document.write(prop, "<br />")
-        }
+        };
 
 
+
+        function Customer(name,email,balance){
+            this.name = name
+            this.email = email
+            this.balance = balance
+            this.payDownBalance = function(amtPaid){ this.balance -= amtPaid}
+        };
+
+
+        cust2 = new Customer("marko", "m@test.com", 100);
+        cust2.payDownBalance(23);
+        document.write("Balance: ", cust2.balance,"<br />");
+
+        // Prototype methods --> apply to all objects of the type
+        Customer.prototype.isCreditAvail = true;
+        
 
 
         
