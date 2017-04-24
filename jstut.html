@@ -185,7 +185,7 @@
      </script>
 
      <!-- JavaScript Void keeps it from reloading the page -->
-      <a href = "JavaScript:void(0)" onClick = "openAlert('hello world')"> Say hello </a><br />
+      <a href = "JavaScript:void(0)" onClick = "openAlert('hello world')" id = "goToGoogle"> Say hello </a><br />
 
       <a href = "JavaScript:void(0)" 
            onmouseover = "this.style.color = 'red';" 
@@ -203,13 +203,37 @@
 
 
 
+    <div id='sampDiv2'>
+        
+        <p> Lorem ipsumn dolor sit amet,
+            <em>
+                consectetur adipiscing
+            </em>
+            elit. Proin eget turpis eget quam. 
+        </p>
 
-                  
+    </div>
 
 
-    <script> 
 
-            // More events @ ~50 min mark.....
+    <script>
+        // More events @ ~50 min mark..... 
+        
+        
+        document.write("Current URL: ", window.location.href, "<br />");
+        document.write("Current URL: ", window.location.hostname, "<br />");
+        document.write("Current URL: ", window.location.pathname, "<br />");
+
+        document.getElementById('goToGoogle').onclick = function(event){window.location.href = 'http://google.com'}
+
+        // Grabbing elements 
+        var pElements = document.getElementsByTagName('p');
+        pElements[0].style.backgroundColor = '#EFDECD';
+
+        document.childNodes[1].style.backgroundColor = '#FAEBD7'
+        document.write(pElements)
+
+            
 
     </script>
 
