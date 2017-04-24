@@ -132,9 +132,37 @@
 
 
 
+        a = [2,34,5,6,7,4,2,567,2,6,9,18]
+
+        function inArray(arrayToCheck, value){
+            for (i = 0; i < arrayToCheck.length; i++){
+                if (value === arrayToCheck[i]){
+                    document.write("Value Matches: ", arrayToCheck[i], "<br />")
+                    document.write("Array Length: ", arrayToCheck.length, "<br />")
+                }
+            }
+        }
+
+        inArray(a, 18);
 
 
+        // You can pass a function as an argument to another function
+        // Likewise, you can set variables equal to functions, which you can then set to array
+        // so you can store arrays of functions
 
+        var triple = function(num){return num * 3}
+        document.write(triple(5), "<br />")
+
+        // You can pass any amount of arguments you want by not passing any:
+        function getSum(){
+            var sum = 0
+            for(i = 0; i < arguments.length; i++){
+                sum += arguments[i];
+
+            }
+            return sum
+        }
+        document.write(getSum(5,10,45), "<br />")
 
 
 
