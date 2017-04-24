@@ -176,11 +176,44 @@
         document.write(factorial(5), "<br />")
 
 
+        function openAlert(mess){
+            alert(mess);
+        };
 
-
+    
 
      </script>
 
+     <!-- JavaScript Void keeps it from reloading the page -->
+      <a href = "JavaScript:void(0)" onClick = "openAlert('hello world')"> Say hello </a><br />
+
+      <a href = "JavaScript:void(0)" 
+           onmouseover = "this.style.color = 'red';" 
+           onmouseout  = "this.style.color = 'blue'">
+           Red Color Change 
+      </a>
+      
+      <br />
+      <a href = "JavaScript:void(0)" onmouseout = "this.style.color = 'blue'"> Red Color Change </a><br />
+
+      <input type="text" id = "randInput"
+      onChange = "var dataEntered = document.getElementById('randInput').value;
+                  alert('User Entered: ' + dataEntered)">
+
+
+
+
+
+                  
+
+
+    <script> 
+
+            // More events @ ~50 min mark.....
+
+    </script>
 
 
 </body>
+
+
