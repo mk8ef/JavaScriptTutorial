@@ -233,10 +233,13 @@
         document.childNodes[1].style.backgroundColor = '#FAEBD7'
         document.write(pElements)
 
-            
+        var paragraph = document.createElement("p")
+        paragraph.setAttribute("id", "paragraph");
+        paragraph.innerHTML = "This is a test paragraph created by JavaScript."
+        sampDiv2.appendChild(paragraph)
+        sampDiv2.insertBefore(paragraph, sampDiv2.childNodes[0])
 
     </script>
-
 
 </body>
 
