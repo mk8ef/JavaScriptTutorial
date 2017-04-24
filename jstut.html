@@ -231,13 +231,62 @@
         pElements[0].style.backgroundColor = '#EFDECD';
 
         document.childNodes[1].style.backgroundColor = '#FAEBD7'
-        document.write(pElements)
+        document.write(pElements,"<br />")
 
         var paragraph = document.createElement("p")
         paragraph.setAttribute("id", "paragraph");
         paragraph.innerHTML = "This is a test paragraph created by JavaScript."
-        sampDiv2.appendChild(paragraph)
+        sampDiv2.appendChild(paragraph,"<br />")
         sampDiv2.insertBefore(paragraph, sampDiv2.childNodes[0])
+
+
+
+        // Object Oriented JavaScript
+        var cust1 = {
+            name: "John Smith",
+            street: "123 Main",
+            city: "Charlottesville",
+            state: "VA",
+            email: "test@test.com",
+            balance: 45,
+            payDownBalance: function(amtPaid){
+                // "this" is similar to pythons "self"
+                this.balance = balance - amtPaid
+            },
+            addToBal: function(amtCharged){
+                this.balance += amtCharged;
+            }
+        };
+
+
+        document.write("Customer Name: ", cust1.name,"<br />")
+        cust1.street = "321 Test"
+
+        for(var prop in cust1){
+            document.write(prop, "<br />")
+        }
+
+
+
+
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
     </script>
 
